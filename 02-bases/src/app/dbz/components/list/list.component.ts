@@ -22,7 +22,7 @@ export class ListComponent {
   @Output()
   public onDelete: EventEmitter<string> = new EventEmitter();
 
-  onDeleteCharacter(index: string | undefined): void {
+  public onDeleteCharacter(index: string | undefined): void {
     console.log({ index });
 
     this.onDelete.emit(index);
