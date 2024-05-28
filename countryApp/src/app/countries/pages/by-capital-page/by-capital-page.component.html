@@ -1,0 +1,19 @@
+<h2>Por capital</h2>
+<hr />
+<div class="row">
+  <div class="col">
+    <app-search-box
+      (onValue)="searchByCapital($event)"
+      placeholder="Buscar por capital"
+    ></app-search-box>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <hr />
+
+    <countries-table [countries]="countries" ></countries-table>
+
+  </div>
+</div>
