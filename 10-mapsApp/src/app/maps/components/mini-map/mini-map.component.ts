@@ -13,10 +13,10 @@ import mapboxgl, { Marker } from 'mapbox-gl';
   templateUrl: './mini-map.component.html',
   styleUrl: './mini-map.component.css',
 })
-export class MiniMapComponent implements AfterViewInit {
-  @Input() lngLat?: [number, number];
-  @ViewChild('map') divMap?: ElementRef;
-
+export class MiniMapComponent {
+  @Input() lngLat?: [number, number] = [0, 0];
+  @ViewChild('map') divMap?: ElementRef = new ElementRef('dafs') ;
+/*
   ngAfterViewInit(): void {
     if (!this.divMap?.nativeElement) throw 'Map Div not found';
     if (!this.lngLat) throw 'Coords cannot be null';
@@ -30,5 +30,23 @@ export class MiniMapComponent implements AfterViewInit {
     });
 
     new Marker().setLngLat(this.lngLat).addTo(map);
+  } */
+
+
+  public miMetodo(value: string): void {
+
+
+    let value1 = value;
+
+    console.log(value1);
+
+
+    alert(value);
+
+
+
+
   }
+
+
 }

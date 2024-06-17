@@ -7,3 +7,6 @@
 
 2- Copiar el .env.template y renombrarlo a .env
 
+
+3- levantar Backend: 'npm run start:dev'
+
